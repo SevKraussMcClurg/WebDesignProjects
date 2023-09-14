@@ -6,8 +6,21 @@
   <meta name="description" content="my contact information">
   <meta name="keywords" content="HTML">
   <meta name="author" content="Sev Krauss-McClurg">
+  <style>
+    li {display:inline; float: left;}
+    li a {padding: 15px 20px; color: #cfe0e3; display: block; text-align: center;}
+    li a:hover:not(.active) {background-color: #9d0000;}
+    ul {list-style-type: none; background-color: #1a1a1a; overflow: hidden; margin: 0; padding: 0; position: fixed; top: 0%; width: 99%;}
+    .active {background-color: #0096b8;}
+    body {background-color: #cfe0e3;}
+  </style>
     </head>
     <body>
-
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
     </body>
 </html>
