@@ -6,15 +6,18 @@
   <meta name="description" content="My favorite thing">
   <meta name="keywords" content="HTML">
   <meta name="author" content="Sev Krauss-McClurg">
-    <style>
-        li {display:inline; float: left;}
-        li a {padding: 15px 20px; color: white; display: block; text-align: center;}
-        li a:hover:not(.active) {background-color: lightskyblue;}
-        ul {list-style-type: none; background-color: lightslategray; overflow: hidden; margin: 0;}
-        .active {background-color: lightseagreen;}
-        .dropdown-content {display: none;}
-        .dropdown:hover .dropdown-content {display:block;}
-      </style>
+  <style>
+    li {display:inline; float: left;}
+    li a:not(.dropdown-content) {padding: 15px 20px; color: white; display: block; text-align: center;}
+    li a:hover:not(.active) {background-color: lightskyblue;}
+    li a, .dropbtn {display: inline-block;}
+    li.dropdown {display: inline-block; color: black;}
+    ul {list-style-type: none; background-color: lightslategray; overflow: hidden; margin: 0;}
+    .active {background-color: lightseagreen;}
+    .dropdown-content {display: none; position: absolute; background-color: white; z-index: 1;}
+    .dropdown-content a {color: black;}
+    .dropdown:hover .dropdown-content {display:block;}
+  </style>
         </head>
 
     <body style="background-color: lightcyan">
@@ -23,11 +26,11 @@
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Pictures</a>
                 <div class="dropdown-content">
-                <a href="picture1.html">Theater Picture 1</a>
-                <a href="picture2.html">Theater Picture 2</a>
+                <a href="picture1.html" style="color: black;">Theater Picture 1</a>
+                <a href="picture2.html" style="color: black;">Theater Picture 2</a>
                 </div>
             </li>
         </ul>
-test
+picture 2
     </body>
 </html>
