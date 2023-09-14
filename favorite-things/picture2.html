@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>My Favorite Thing</title>
+    <head>
+        <meta charset="UTF-8">
+  <meta name="description" content="My favorite thing">
+  <meta name="keywords" content="HTML">
+  <meta name="author" content="Sev Krauss-McClurg">
+    <style>
+        li {display:inline; float: left;}
+        li a {padding: 15px 20px; color: white; display: block; text-align: center;}
+        li a:hover:not(.active) {background-color: lightskyblue;}
+        ul {list-style-type: none; background-color: lightslategray; overflow: hidden; margin: 0;}
+        .active {background-color: lightseagreen;}
+        .dropdown-content {display: none;}
+        .dropdown:hover .dropdown-content {display:block;}
+      </style>
+        </head>
+
+    <body style="background-color: lightcyan">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Pictures</a>
+                <div class="dropdown-content">
+                <a href="picture1.html">Theater Picture 1</a>
+                <a href="picture2.html">Theater Picture 2</a>
+                </div>
+            </li>
+        </ul>
+test
+    </body>
+</html>

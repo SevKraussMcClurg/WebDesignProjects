@@ -6,8 +6,30 @@
   <meta name="description" content="My favorite thing">
   <meta name="keywords" content="HTML">
   <meta name="author" content="Sev Krauss-McClurg">
-    </head>
+    <style>
+        li {display:inline; float: left;}
+        li a {padding: 15px 20px; color: white; display: block; text-align: center;}
+        li a:hover:not(.active) {background-color: lightskyblue;}
+        li a, .dropbtn {display: inline-block;}
+        li.dropdown {display: inline-block;}
+        ul {list-style-type: none; background-color: lightslategray; overflow: hidden; margin: 0;}
+        .active {background-color: lightseagreen;}
+        .dropdown-content {display: none; position: absolute; background-color: white; z-index: 1;}
+        .dropdown:hover .dropdown-content {display:block;}
+      </style>
+        </head>
+
     <body style="background-color: lightcyan">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Pictures</a>
+                <div class="dropdown-content">
+                <a href="picture1.html">Theater Picture 1</a>
+                <a href="picture2.html">Theater Picture 2</a>
+                </div>
+            </li>
+        </ul>
         <h1 style="background-color: cyan; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center;">My Favorite Thing</h1>
         <h2 style="color: crimson; text-align: center;"> &#127917 &#10024 &#128151<i> The Theater </i>&#128151 &#10024 &#127917</h2>
         <p style="text-align: center; font-size:xx-large;">This is <img src="images/theater.jpg" alt="picture of a theater including the stage and seats" width="500" height="300"> a theater </p>
@@ -25,11 +47,11 @@
         <p style="font-size:larger;">Here is<a href="https://www.5thavenue.org/"> 5th Avenue's website </a>if you would like to see their upcoming shows</p>
         </ol>
         <p>Here is a fun game, guess the name of the show from emojis!</p>
-        <ul style="font-size: large;">
+        <ol style="font-size: large;">
             <li>&#127979 &#127928</li>
             <li>&#129714 &#129475</li>
             <li>&#127805</li>
             <li>🤏🏪😱</li>
-        </ul>
+        </ol>
     </body>
 </html>
