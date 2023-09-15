@@ -1,0 +1,45 @@
+body {
+    background-color: #cfe0e3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    padding: 15px 20px; 
+    color: #cfe0e3; 
+    display: block; 
+    text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: #9d0000;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #1a1a1a; 
+    margin: 0; 
+    padding: 0; 
+    position: fixed;
+    top: 0%;
+    width: 99%;
+}
+
+.active {
+    background-color: #0096b8;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.container > div {
+    text-align: center;
+}
