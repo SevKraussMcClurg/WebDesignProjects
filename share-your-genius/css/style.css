@@ -46,7 +46,8 @@ ul {
 
 table {
     border: 1px black;
-    background-color: #c3e3e9;
+    background-color: #00363f21;
+    padding: 15px;
 }
 
 td {
@@ -56,5 +57,5 @@ td {
 
 img {
     border-radius: 10px;
-    box-shadow: 0 2px 6px 0;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 100);
 }
