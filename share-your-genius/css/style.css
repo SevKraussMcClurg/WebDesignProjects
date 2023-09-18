@@ -43,3 +43,18 @@ ul {
 .container > div {
     text-align: center;
 }
+
+table {
+    border: 1px black;
+    background-color: #c3e3e9;
+}
+
+td {
+    text-align: center;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0;
+}
