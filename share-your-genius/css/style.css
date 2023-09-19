@@ -16,6 +16,17 @@ li a {
 li a:hover:not(.active) {
     background-color: #9d0000;
     display: block;
+    animation-name: navbarhover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes navbarhover {
+    0% {background-color: #9d0000;}
+    25% {background-color: #93009d;}
+    50% {background-color: #00769d;}
+    75% {background-color: #47009d;}
+    100% {background-color: #9d0000;}
 }
 
 ul {
@@ -58,4 +69,9 @@ td {
 img {
     border-radius: 10px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 100);
+}
+
+.textbackground {
+    background: rgba(121, 233, 255, 0.3);
+    padding: 1px;
 }
