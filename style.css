@@ -1,22 +1,71 @@
 body {
-    background-color: #F2EFE4;
+    background-color: #E7ECE1;
+}
+
+.githublink {
+    font-weight: bold;
+    background-color: #6C8C86;
+}
+
+.githublink :hover {
+    background-color: #387373;
+}
+
+.heavyfont {
+    font-size: 35px;
 }
 
 td {
-    padding: 5%;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: #387373;
-    text-align: center;
-    display: inline-block;
+    font-size: 25px;
 }
 
 tr :hover {
     background-color: #6C8C86;
 }
 
+div .links {
+    vertical-align: top;
+    background-color: #AABFB3;
+    display: grid;
+}
+
+.container > div:hover {
+    background-color: #AABFB3;
+}
+
+.container {
+    align-content: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.content :hover {
+    background-color: #AABFB3;
+}
+
+.content {
+    display: grid;
+    align-items: center;
+}
+
 table {
     background-color: #AABFB3;
+    text-align: center;
 }
 
 h1 {
     color: #025959;
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    height: 400px;
+    width: 300px;
 }
