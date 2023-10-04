@@ -1,0 +1,22 @@
+body {
+    background-color: #F2EFE4;
+}
+
+td {
+    padding: 5%;
+    color: #387373;
+    text-align: center;
+    display: inline-block;
+}
+
+tr :hover {
+    background-color: #6C8C86;
+}
+
+table {
+    background-color: #AABFB3;
+}
+
+h1 {
+    color: #025959;
+}
