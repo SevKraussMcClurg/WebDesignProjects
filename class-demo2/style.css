@@ -1,0 +1,39 @@
+body {
+    background-color: lightcyan;
+}
+
+table, th, td, th {
+    border: 3px dashed blue;
+    border-collapse: collapse;
+    margin: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.bigtext {
+    font-size: 40px;
+}
+
+#funnytext {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    background-color: lightslategray;
+}   
+
+.topheader {
+    text-shadow: 0px 0px 20px red;
+}
+
+.textbody {
+    color: purple;
+}
+
+.pinkhighlight {
+    background-color: pink;
+}
+
+.linkbox {
+    background-color: lightcoral;
+}

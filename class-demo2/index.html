@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-
     <head>
+
         <title>CSS and HTML Demo</title>
 
         <meta charset="UTF-8">
@@ -9,23 +9,24 @@
         <meta name="keywords" content="HTML, demo, CSS, learning">
         <meta name="author" content="Sev Krauss-McClurg">
 
-        <style>
-body {
-    background-color: lightcyan;
-}
-        </style>
+        <link rel="stylesheet" href="style.css">
+
     </head>
+
     <body>
-        <h1>CSS and HTML Demo</h1>
-        <table style="border: 1px black; margin: 30px;">
-            <tr style="background-color: lightslategray;">
+        <div class="topheader">
+            <h1>CSS and HTML Demo</h1>
+            <p>this is just filler text within a div</p>
+        </div>
+        <table>
+            <tr id="funnytext">
                 <th>text things</th>
                 <th>non text things</th>
             </tr>
             <tr>
                 <td>
-                    <p style="color: darkblue;"">
-                    <strong><b><i>this is a lot of text in a long paragrpah form and i just need a 
+                    <p class="textbody">
+                    <strong><b><i>this is a lot of text in a <span class="pinkhighlight">long paragrpah</span> form and i just need a 
                     bunch of text to add here because it needs to just work a bit. 
                     here is a lot more text becuase i am just trying to fill space 
                     and make this look good on the website with more text. the more
@@ -38,8 +39,8 @@ body {
                 </td>
             </tr>
             <tr>
-                <td style="background-color: lightcoral;">
-                    <ul>
+                <td class="linkbox">
+                    <ul class="bigtext">
                         <li><a href="https://google.com" target="_blank">Google</a></li>
                         <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
                         <li><a href="https://www.epschedule.com" target="_blank">EPSchedule</a></li>
@@ -55,7 +56,5 @@ body {
                 </td>
             </tr>
         </table>
-
     </body>
-
 </html>
