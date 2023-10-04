@@ -16,10 +16,9 @@ body {
 }
 
 td {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 5px;
     color: #387373;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 tr :hover {
@@ -39,7 +38,6 @@ div .links {
 .container {
     align-content: center;
     display: grid;
-    align-items: center;
     grid-template-columns: 50% 50%;
     column-gap: 10px;
     padding: 10px;
