@@ -39,6 +39,7 @@ div .links {
     align-content: center;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
     column-gap: 10px;
     padding: 10px;
 }
