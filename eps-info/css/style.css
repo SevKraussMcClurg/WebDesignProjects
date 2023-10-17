@@ -56,21 +56,50 @@ ul.nav li :hover {
 }
 
 .video {
-    grid-row: 6 / span 2;
+    grid-row: 6;
     grid-column: 1 / span 2;
 }
 
 .intro-text {
-    grid-row: 6 / span 2;
+    grid-row: 6;
     grid-column: 3 / span 2;
 }
 
 .who-are-we {
-    grid-row: 8 / span 2;
+    grid-row: 7;
     grid-column: 1 / span 2;
 }
 
-.image2 {
-    grid-row: 8 / span 2;
+.home-image2 {
+    grid-row: 7;
     grid-column: 3 / span 2;
+}
+
+.lpc-food {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+}
+
+.food-picture {
+    grid-row: 7;
+    grid-column: 1 / span 3;
+}
+
+.other-food {
+    grid-row: 8;
+    grid-column: 1 / span 3;
+}
+
+.food-prices {
+    grid-row: 6 / span 3;
+    grid-column: 4;
+}
+
+.footer { /* change in head style to be the correct grid row*/
+    grid-row: 8;
+    grid-column: 1 / span 4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
