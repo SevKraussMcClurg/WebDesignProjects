@@ -9,6 +9,18 @@
     <meta name="description" content="">
     <meta name="keywords" content="HTML, CSS, EPS, new, student">
     <meta name="author" content="Sev Krauss-McClurg">
+
+    <style>
+        .overview-text {
+            grid-row: 6 / span 3;
+            grid-column: 2 / span 2;
+        }
+
+        .table-of-rooms {
+            grid-row: 10;
+            grid-column: 2 / span 2;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +28,7 @@
         <div class="grid-item nav-menu">
             <ul class="nav">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="map.html">MAP</a></li>
+                <li class="active"><a href="map.html">MAP</a></li>
                 <li><a href="leisure.html">LEISURE</a></li>
                 <li><a href="food.html">FOOD</a></li>
                 <li><a href="studytips.html">STUDY TIPS</a></li>
@@ -24,6 +36,8 @@
             </ul>
         </div>
 
+
+        <!--The following consists of header information-->
         <div class="grid-item header">
             <p>Title: Map of EPS Buildings</p>
         </div>
@@ -32,26 +46,21 @@
             <p>Map of EPS</p>
         </div>
 
+        <!--First dividing bar-->
         <div class="dividing-bar">
             <p>div bar</p>
         </div>
 
-        <div class="grid-item video">
-            <p>video</p>
+        <!--Overview text and table of rooms w/ content-->
+        <div class="grid-item overview-text">
+            <p>Overview Text</p>
         </div>
 
-        <div class="grid-item intro-text">
-            <p>intro text</p>
+        <div class="grid-item table-of-rooms">
+            <p>Table</p>
         </div>
 
-        <div class="grid-item who-are-we">
-            <p>who we are text</p>
-        </div>
-
-        <div class="grid-item image2">
-            <p>image 2</p>
-        </div>
-
+        <!--footer-->
         <div class="footer">
             
         </div>

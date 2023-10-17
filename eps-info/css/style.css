@@ -98,7 +98,7 @@ ul.nav li :hover {
 .footer { /* change in head style to be the correct grid row*/
     grid-row: 8;
     grid-column: 1 / span 4;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
