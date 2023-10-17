@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+.active {
+    background-color: darkblue;
+}
+
 ul.nav li a {
     align-content: center;
     display: block;
