@@ -1,3 +1,7 @@
+body {
+    background-color: #F0E0CF;
+}
+
 .nav {
     list-style-type: none;
     margin: 0;
@@ -6,7 +10,7 @@
 }
 
 .active {
-    background-color: darkblue;
+    background-color: #F0E0CF;
 }
 
 ul.nav li a {
@@ -16,8 +20,8 @@ ul.nav li a {
     text-decoration: none;
 }
 
-ul.nav li :hover {
-    background-color: rgb(38, 94, 113);
+ul.nav li:hover:not(.active) {
+    background-color: #A9BEBE;
 }
 
 .grid-container {
@@ -27,8 +31,14 @@ ul.nav li :hover {
 }
 
 .grid-item {
-    background-color: lightblue;
+    background-color: #A9BEBE;
     align-content: center;
+    padding: 10px;
+    color: #03093E;
+}
+
+.image, .nav-menu {
+    background-color: #F0C56B;
 }
 
 .nav-menu {
@@ -39,6 +49,8 @@ ul.nav li :hover {
 .header {
     grid-row: 1;
     grid-column: 2 / span 3;
+    text-align: center;
+    font-size: 25px;
 }
 
 .header-image1 {
@@ -51,7 +63,7 @@ ul.nav li :hover {
     grid-row: 5;
     width: 100%;
     height: 0px;
-    border-bottom: 4px dotted rgb(84, 84, 84);
+    border-bottom: 4px dotted #021056;
     font-size: 0px;
 }
 
@@ -63,11 +75,13 @@ ul.nav li :hover {
 .intro-text {
     grid-row: 6;
     grid-column: 3 / span 2;
+    font-size: 20px;
 }
 
 .who-are-we {
     grid-row: 7;
     grid-column: 1 / span 2;
+    font-size: 20px;
 }
 
 .home-image2 {
@@ -78,6 +92,7 @@ ul.nav li :hover {
 .lpc-food {
     grid-row: 6;
     grid-column: 1 / span 3;
+    font-size: 20px;
 }
 
 .food-picture {
@@ -88,18 +103,25 @@ ul.nav li :hover {
 .other-food {
     grid-row: 8;
     grid-column: 1 / span 3;
+    font-size: 20px;
 }
 
 .food-prices {
     grid-row: 6 / span 3;
     grid-column: 4;
+    font-size: 20px;
+    display: block;
 }
 
 .footer { /* change in head style to be the correct grid row*/
     grid-row: 8;
     grid-column: 1 / span 4;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     text-align: center;
+}
+
+.headerimage {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
