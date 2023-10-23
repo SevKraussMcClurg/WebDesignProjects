@@ -18,8 +18,17 @@
 
         .table-of-rooms {
             grid-row: 10;
-            grid-column: 2 / span 2;
+            grid-column: 1 / span 4;
         }
+
+        .footer {
+            grid-row: 11;
+        }
+
+        table {
+            border: 2px solid black;
+        }
+        
     </style>
 </head>
 
@@ -39,11 +48,11 @@
 
         <!--The following consists of header information-->
         <div class="grid-item header">
-            <p>Title: Map of EPS Buildings</p>
+            <h1>Map of EPS Buildings and Utilities</p>
         </div>
 
         <div class="grid-item header-image1">
-            <p>Map of EPS</p>
+            <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d519.4013314283175!2d-122.19893103678683!3d47.643472366403884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1698080475129!5m2!1sen!2sus" width="1000" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
         </div>
 
         <!--First dividing bar-->
@@ -53,16 +62,29 @@
 
         <!--Overview text and table of rooms w/ content-->
         <div class="grid-item overview-text">
-            <p>Overview Text</p>
+            <p style="text-align:center;">Below is a guide of EPS buildings as well as utilities at and near EPS:</p>
         </div>
 
         <div class="grid-item table-of-rooms">
-            <p>Table</p>
+            <center>
+                <table>
+                <tr>
+                    <th>Parking</th>
+                    <td>Placeholder</td>
+                </tr>
+                <tr>
+
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            </center>
         </div>
 
         <!--footer-->
         <div class="footer">
-            
+            <p>Kyle Toshev</p>
         </div>
     </div>
 </body>
