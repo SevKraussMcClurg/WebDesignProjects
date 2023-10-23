@@ -13,42 +13,78 @@
     <style>
 
         .text1 {
-            grid-column: 1 / span 2;
+            grid-column: 1 / span 4;
             grid-row: 6;
         }
 
         .video {
-            grid-column: 3 / span 2;
-            grid-row: 6 / span 2;
-        }
-
-        .image1 {
             grid-column: 1 / span 2;
             grid-row: 7 / span 2;
         }
 
-        .text2 {
-            grid-column: 3 / span 2;
-            grid-row: 8
+        .dividing-line {
+            grid-column: 1 / span 2;
+            grid-row: 9;
+            width: 100%;
+            height: 0px;
+            border-bottom: 4px dotted #021056;
+            font-size: 0px;
+        }
+
+        .image1 {
+            grid-column: 1 / span 2;
+            grid-row: 10;
         }
 
         .text3 {
-            grid-column: 1 / span 2;
-            grid-row: 9
+            grid-column: 3 / span 2;
+            grid-row: 7;
         }
 
         .table {
             grid-column: 3 / span 2;
-            grid-row: 9 / span 3;
+            grid-row: 8 / span 4;
+            text-align: center;
         }
 
         .text4 {
             grid-column: 1 / span 2;
-            grid-row: 10 / span 2;
+            grid-row: 11;
         }
 
         .footer {
-            grid-row: 11;
+            grid-row: 12;
+        }
+
+        .contentimage {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .firstimage {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        table {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid black;
+        }
+
+        th {
+            border: 2px solid black;
         }
 
     </style>
@@ -69,43 +105,105 @@
         </div>
 
         <div class="grid-item header">
-            <p>header</p>
+            <h1>Study Tips at EPS</h1>
         </div>
 
-        <div class="grid-item header-image1">
-            <p>header image</p>
+        <div class="grid-item image header-image1">
+            <img class="headerimage" src="images/eps-studying.jpg" alt="image of students studying at Eastside Prep">
         </div>
 
         <div class="dividing-bar">
             <p>div bar</p>
         </div>
 
-        <div class="grid-item text1">
-            <p>text 1</p>
+        <div class="grid-item text1" style="font-size: 20px;">
+            <p>Classes at EPS are often rigorous and challenging, so it is important to develop good study skills so you can stay on top of your work and be fully engaged in class.
+                Everyone has a different style of learning and studying that is best for them, so it is important to try a variety of different tips and strategies to figure out what works for you.
+                EPS has many resources that can help you develop study strategies, and oftentimes working with your classmates or having group study sessions can be the most effective way to finish classwork and study for exams.
+            </p>
         </div>
 
-        <div class="grid-item video">
-            <p>video</p>
+        <div class="grid-item video" style="font-size: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ryTYn12g--0?si=l1EkMAhuh6mn7uCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Note-taking is a skill that is very important both in high school and beyond. There are many different, unique ways to take notes, and it is recommended that you use your time at EPS to customize and practice your own strategy.
+                See this video for ideas on note-taking structures and tips on how to take effective, concise notes.
+            </p>
         </div>
 
-        <div class="grid-item image1">
-            <p>image 1</p>
+        <div class="dividing-line">
+            <p>div bar</p>
         </div>
 
-        <div class="grid-item text2">
-            <p>text 2</p>
+        <div class="grid-item image image1">
+            <img class="firstimage" src="images/eps-learningcenter.jpg" alt="image of learning center at Eastside Prep">
         </div>
 
-        <div class="grid-item text3">
-            <p>text 3</p>
+        <div class="grid-item text3" style="font-size: 20px;">
+            <p>There are countless online resources that can help you with understanding content and completing assignments for all types of classes, from Spanish to math to tech.
+                There is also a lot of information on the EPS website about academic policies and guidelines, and multiple ways for you to seek academic help at Eastside Prep.
+                See the table below for links to many options for online resources and academic help.
+            </p>
         </div>
 
-        <div class="grid-item table">
-            <p>table</p>
+        <div class="grid-item table" style="font-size: 20px; border-radius: 40px;">
+            <h3>Academic Resources</h3>
+            <table>
+                <tr>
+                    <th>Resource</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><a href="https://eastsideprep.instructure.com/" target="_blank">Eastside Prep Canvas</a></td>
+                    <td>A great online resource to track your classes, assignments, calendar, and grades.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.eastsideprep.org/current-families/handbooks/upper-school-student-handbook/" target="_blank">Upper School Student Handbook</a></td>
+                    <td>Contains information about academics in the upper school, including grading, class enrollment, add/drop periods, and other academic guidelines at Eastside Prep. </td>
+                </tr>
+                <tr>
+                    <td><a href="https://bnck-12.com/eastsideprep" target="_blank">Online Bookstore</a></td>
+                    <td>Eastside Prep online bookstore to find and order all textbooks and readings for your classes for the year.</td>
+                </tr>
+                <tr>
+                    <td><a href="mailto:learningsupport@eastsideprep.org">Learning Support Email</a></td>
+                    <td>You can email the learning support team for help or support with classes, assignments, and study strategies.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://forms.office.com/pages/responsepage.aspx?id=ix5osiDdz0axYzcaLXxgFLYHCoYTbeBIuey_SmHr0hRUN1ZHRUlNNE9DMTdINzY3VVRMMFpIOTRCTS4u&web=1&wdLOR=c5363CC72-2E69-4250-8FC3-AF15CCE04015" target="_blank">Accommodation Request Form</a></td>
+                    <td>The form to request accommodations for any assessments in all classes (must submit 48 hours prior to assessment).</td>
+                </tr>
+                <tr>
+                    <td><a href="https://eastsideprep.instructure.com/courses/1428211/pages/eps-databases-for-research" target="_blank">Online Databases</a></td>
+                    <td>A list of all Eastside Prep online databases with usernames and passwords, great for reliable research on many topics.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.wordreference.com/" target="_blank">Word Reference</a></td>
+                    <td>The only approved Spanish/English translator at EPS, it is very useful in all Spanish classes.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://tutorial.math.lamar.edu/" target="_blank">Paul's Online Notes</a></td>
+                    <td>Math tutorials and practice problems for students in calculus classes at Eastside Prep.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.desmos.com/calculator" target="_blank">Desmos Graphing Calculator</a></td>
+                    <td>Graphing calculator that is very useful for all math classes at Eastside Prep.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.sparknotes.com/" target="_blank">Spark Notes</a></td>
+                    <td>Provides summaries that can be helpful in comprehending difficult books for literature classes - always read the book first though!</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></td>
+                    <td>Very helpful in web design classes because it contains lots of information and examples of html and css.</td>
+                </tr>
+            </table>
         </div>
 
-        <div class="grid-item text4">
-            <p>text 4</p>
+        <div class="grid-item text4" style="font-size: 20px;">
+            <p>You can always go to your teachers for help for any reason, inlcuding going over class content, clarifying assignments, or asking for an extension on an assessment if you have a busy week.
+                One of the best ways to reach your teachers is to talk to them before or after class, find them in their offices during office hours, or schedule a meeting.
+                Eastside Prep primarily uses <strong>email</strong> to contact teachers and <strong>Teams</strong> to schedule meetings.
+            </p>
         </div>
 
         <div class="footer">
