@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>EPS New Student Tips and Tricks: Liesure</title>
 
@@ -10,6 +11,42 @@
     <meta name="description" content="">
     <meta name="keywords" content="HTML, CSS, EPS, new, student">
     <meta name="author" content="Sev Krauss-McClurg">
+
+    <style>
+        /*new css style*/
+        .cool-image {
+            filter: drop-shadow(5px 5px 5px black);
+        }
+
+        .overview-text {
+            grid-row: 6;
+            grid-column: 2 / span 2;
+        }
+
+        .spot-1 {
+            grid-row: 7;
+            grid-column: 1;
+        }
+
+        .spot-2 {
+            grid-row: 7;
+            grid-column: 2;
+        }
+
+        .spot-3 {
+            grid-row: 7;
+            grid-column: 3;
+        }
+
+        .spot-4 {
+            grid-row: 7;
+            grid-column: 4;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,36 +62,75 @@
             </ul>
         </div>
 
+        <!--Header information-->
+
         <div class="grid-item header">
-            <p>header</p>
+            <h1>Relaxation at EPS</h1>
         </div>
 
-        <div class="grid-item header-image1">
-            <p>header image</p>
+        <div class="grid-item image header-image1">
+            <center><img class="cool-image" src="images/eps-relax.jpg" alt="Image of a man relaxing under a tree.">
+            </center>
         </div>
 
-        <div class="dividing-bar">
-            <p>div bar</p>
+        <div class="dividing-bar"></div>
+
+        <!--Reasons to relax and overview-->
+        <div class="grid-item overview-text">
+            <p>
+                While being productive at school is obviously vital, there comes a time in every student's life
+                in which they need to just take a breather and relax. Luckily, EPS provides plenty of choices of
+                locations
+                and activities which students can busy themselves with. Just remember: ALWAYS make sure that you are not
+                sacrificing
+                your only available work time, and then you can go off and do anything. The best time is usually during
+                a free period
+                after completing work. Below are four of the most popular hang-out spots for students at EPS:
+            </p>
         </div>
 
-        <div class="grid-item video">
-            <p>video</p>
+        <!--Grid of spots to relax in and around EPS-->
+
+        <!--Spot #1 Tali 3rd Floor-->
+        <div class="grid-item image spot-1">
+            <center><img class="cool-image" width="400px" src="images/eps-learningcenter.jpg"
+                    alt="Image of the EPS learning center on the third floor"></center>
+            <p>
+                The third floor of <b>TALI</b> is a common area to pass the time for good reason.
+                It is loaded with relaxing soft chairs, the Friel learning area has board games, 
+                and when no classes are happening, the music rooms are free to jam out it with friends.
+            </p>
         </div>
 
-        <div class="grid-item intro-text">
-            <p>intro text</p>
+        <!--Spot #2 Sport court-->
+        <div class="grid-item image spot-2">
+            <center><img class="cool-image" width="300px" src="images/eps-sport-court.jpg"
+                    alt="Image of the EPS sport court from above"></center>
+            <p>
+                The sport court, behind <b>TALI</b> and <b>TMAC</b>, is available for all students to use,
+                has multiple basketball hoops and has plenty of space. Next to it is a box full of balls, frisbees,
+                and more which are free to use. 
+            </p>
         </div>
 
-        <div class="grid-item who-are-we">
-            <p>who we are text</p>
+        <!--Spot #3 Burgermaster-->
+        <div class="grid-item image spot-3">
+            <center><img class="cool-image" width="400px" src="images/eps-burgermaster.jpg"
+                    alt="Image of the Burgermaster near EPS"></center>
         </div>
 
-        <div class="grid-item image2">
-            <p>image 2</p>
+        <!--Spot #4 Parks around Kirkland-->
+        <div class="grid-item image spot-4">
+            <center><img class="cool-image" width="400px" src="images/eps-kirkland.jpg"
+                    alt="Image of the Burgermaster near EPS"></center>
         </div>
+
+        <!--Title for video-->
+
+        <!--Game video-->
 
         <div class="footer">
-            
+            <p>Kyle Toshev</p>
         </div>
     </div>
 </body>
