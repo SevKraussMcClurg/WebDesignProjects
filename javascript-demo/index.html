@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <title>2 Truths and a Lie</title>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="javascript demo">
+        <meta name="keywords" content="javascript">
+        <meta name="author" content="Sev Krauss-McClurg">
+
+        <style>
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Let's learn javascript</h1>
+
+        <h2>How to do onclick events</h2>
+        <a href="https://www.eastsideprep.org/" target="_blank"
+            onclick="alert('Warning you are navigating away from this page!')">School website</a>
+        <hr>
+
+        <h2>Display a secret message on button click</h2>
+        <p id="secret"></p>
+        <button
+            onclick="reveal()" >Reveal!</button>
+        <button onclick="document.getElementById('secret').style.display='none'">Hide</button>
+
+        <hr>
+
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="myName"><br>
+            <input type="submit" value="submit" onclick="hello()">
+
+        </form>
+
+        <p>2 truths and a lie, select the lie</p>
+        <form> 
+            <input type="radio" id="1" name="truth-lie" value="truth">
+            <label for="1">i have a dog</label><br>
+
+            <input type="radio" id="2" name="truth-lie" value="lie">
+            <label for="2">i have a cat</label><br>
+            
+            <input type="radio" id="3" name="truth-lie" value="truth">
+            <label for="3">i like theater</label><br>
+            <input type="submit" onclick="answer()" value="submit">
+        </form>
+    <p id="answer"></p>
+    
+    </body>
+    <script>
+        function reveal() {
+            document.getElementById('secret').innerHTML='shhh very very secret'; 
+            getElementById('secret').style.display='block'
+        }
+
+        function hello() {
+            let name=document.getElementById('fname').value;
+            alert("hello " + name);
+        }
+
+        function answer() {
+            let answerTag = document.getElementById('answer');
+           if(document.getElementById('1').checked) {
+                answerTag.innerHTML='truth';
+                answerTag.style.color='green';
+                answerTag.style.display='block';
+           }
+           if (document.getElementById('2').checked) {
+                answerTag.innerHTML='lie';
+                answerTag.style.color='red';
+                answerTag.style.display='block';
+                answerTag.style.fontSize='40px';
+           }  
+           if (document.getElementById('3').checked) {
+                answerTag.innerHTML='truth';
+                answerTag.style.color='green';
+                answerTag.style.display='block';
+           }  }
+    </script>
+</html>
