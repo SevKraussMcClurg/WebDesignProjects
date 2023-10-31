@@ -34,7 +34,7 @@
         <form>
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="myName"><br>
-            <input type="submit" value="submit" onclick="hello()">
+            <input type="button" value="submit" onclick="hello()">
 
         </form>
 
@@ -48,9 +48,30 @@
             
             <input type="radio" id="3" name="truth-lie" value="truth">
             <label for="3">i like theater</label><br>
-            <input type="submit" onclick="answer()" value="submit">
+            <input type="button" onclick="answer()" value="submit">
         </form>
     <p id="answer"></p>
+
+    <p>2 truths and a lie, select BOTH truths</p>
+    <form> 
+        <input type="checkbox" id="4" name="checkboxtruthlie" value="truth">
+        <label for="4">i have a dog</label><br>
+
+        <input type="checkbox" id="5" name="checkboxtruthlie" value="lie">
+        <label for="5">i have a cat</label><br>
+        
+        <input type="checkbox" id="6" name="checkboxtruthlie" value="truth">
+        <label for="6">i like theater</label><br>
+        <input type="button" onclick="answer2()" value="submit">
+    </form>
+    <p id="answer2"></p>
+
+    <p>Choose your favorite color</p>
+    <form> 
+        <input type="color" id="favcolor" name="favcolor" value="#000000">
+        <input type="button" onclick="coloranswer()" value="submit">
+    </form>
+    <p id="colorchange"></p>
     
     </body>
     <script>
@@ -82,5 +103,25 @@
                 answerTag.style.color='green';
                 answerTag.style.display='block';
            }  }
+
+           function answer2() {
+            let answerTag2 = document.getElementById('answer2')
+            if(document.getElementById('4').checked && document.getElementById('6').checked) {
+                answerTag2.innerHTML='correct';
+                answerTag2.style.color='green';
+                answerTag2.style.display='block';
+            }
+            else {
+                answerTag2.innerHTML='incorrect';
+                answerTag2.style.color='red';
+                answerTag2.style.display='block';
+            }   }
+
+            function coloranswer() {
+                let coloranswer = document.getElementById('colorchange');
+                let favcolor=document.getElementById('favcolor').value;
+                coloranswer.innerHTML='here is your favorite color!'
+                document.body.style.background=favcolor
+            }
     </script>
 </html>
