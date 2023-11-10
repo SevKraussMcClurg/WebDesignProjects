@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>The French Bakery</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ths5bjd.css">
 
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -51,7 +53,7 @@
         grid-row: 2;
         grid-column: 1;
     }
-    
+
     .carosel-text {
         grid-row: 3;
         grid-column: 1;
@@ -84,86 +86,152 @@
 </style>
 
 <body>
-    <div class="grid-item nav-menu">
+    <div class="grid-con overall">
         <ul class="nav">
             <li><a class="orderbutton" href="">ORDER NOW</a></li>
-            <li><a href="">IMPACT</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="menu.html">OUR MENU</a></li>
-            <li><a href="">LOCATIONS</a></li>
-            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a class="navbutton" href="impact.html">IMPACT</a></li>
+            <li><a class="navbutton" href="about.html">ABOUT</a></li>
+            <li><a class="navbutton" href="menu.html">OUR MENU</a></li>
+            <li><a class="navbutton" href="locations.html">LOCATIONS</a></li>
+            <li class="active"><a class="navbutton" href="index.html">HOME</a></li>
         </ul>
 
-        <div class="grid-container backgroundhighlight bhone">
-            <div class="grid-item header">
+        <div class="grid-con backgroundhighlight bhone">
+            <div class="grid-piece header">
                 <p class="title the">THE</p><br>
                 <p class="title french"><i>French</i></p><br>
                 <p class="title bakery">BAKERY</p><br>
             </div>
 
-            <div class="grid-item image ione">
-                <img class="headerimages" src="images/food image 1.jpg" alt="image of food from the bakery">
+            <div class="grid-piece image ione">
+                <center><img class="headerimages" src="images/header-1.jpg" alt="image of food from the bakery">
+                </center>
             </div>
 
-            <div class="grid-item image itwo">
-                <img class="headerimages" src="images/food image 1.jpg" alt="image of food from the bakery">
+            <div class="grid-piece image itwo">
+                <center><img class="headerimages" src="images/header-2.jpg" alt="image of food from the bakery">
+                </center>
             </div>
 
-            <div class="grid-item intro-text">
-                <p class="intro-text-text">“Always Fresh” is a tradition we adhere to. We bake fresh everyday, all day. Visit one of our locations on Seattle’s East Side or order from our menus of freshly baked goods, desserts, kitchen and catering.</p>
+            <div class="grid-piece intro-text">
+                <center>
+                    <p class="intro-text-text">“Always Fresh” is a tradition we adhere to. We bake fresh everyday, all
+                        day. Visit one of our locations on Seattle’s East Side or order from our menus of freshly baked
+                        goods, desserts, kitchen and catering.</p>
+                </center>
             </div>
 
-            <div class="grid-item image ithree">
-                <img class="headerimages" src="images/food image 1.jpg" alt="image of food from the bakery">
+            <div class="grid-piece image ithree">
+                <center><img class="headerimages" src="images/header-3.jpg" alt="image of food from the bakery">
+                </center>
             </div>
 
-            <div class="grid-item image ifour">
-                <img class="headerimages" src="images/food image 1.jpg" alt="image of food from the bakery">
+            <div class="grid-piece image ifour">
+                <center><img class="headerimages" src="images/header-4.webp" alt="image of food from the bakery">
+                </center>
             </div>
         </div>
 
-        <div class="grid-container menu">
-            <h3 class="specialties-header"><center>Our Specialties</center></h3>
-            <p class="specialties-text"><center>From authentic artisan breads and pastries, to delicious, freshly baked cakes, The French Bakery offers a variety of fresh baked goods everday. Cakes are also available to order and our catering service is available to private parties, corporate events and everyday gatherings or meetings.</center></p>
+        <div class="grid-con menu">
+            <h3 class="specialties-header">
+                <center>Our Specialties</center>
+            </h3>
+            <div class="specialties-text">
+                <p>
+                    <center>From authentic artisan breads and pastries, to delicious, freshly baked cakes, The French
+                        Bakery
+                        offers a variety of fresh baked goods everday. Cakes are also available to order and our
+                        catering
+                        service is available to private parties, corporate events and everyday gatherings or meetings.
+                    </center>
+                </p>
+            </div>
             <div class="carosel">
-                <p class="carosel-text"><center>make carosel</center></p>
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="images/menu-bread.jpg" alt="bread from bakery"></td>
+                            <td><img src="images/menu-cake.jpg" alt="cake from bakery"></td>
+                            <td><img src="images/menu-coffee.jpg" alt="coffee from bakery"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/menu-kitchen.jpg" alt="kitchen items from bakery"></td>
+                            <td><img src="images/menu-pasteries.jpg" alt="pasteries from bakery"></td>
+                            <td><img src="images/menu-tart.jpg" alt="tart from bakery"></td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+
+            <div class="view-menu-button orderbutton">
+                <center><a href="menu.html">View Menu</a></center>
             </div>
         </div>
 
-        <div class="grid-container map">
-            <h3 class="map-header"><center>Our Locations</center></h3>
-            <p class="google-map">map</p>
-            <div class="crossroads">
-                <h4>Crossroads</h4>
-                <p>15600 NE 8th St K-4 <br>
-                    Bellevue, WA 98008 <br>
-                    (425) 747-0557</p>
+        <div class="grid-con map">
+            <h3 class="map-header">
+                <center>Our Locations</center>
+            </h3>
+            <iframe class="google-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.3390078764623!2d-122.13369862470465!3d47.619541087085274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906dbaaf77f0cf%3A0xb97ddb1a1a516c3a!2sThe%20French%20Bakery%20Crossroads%20Bellevue!5e0!3m2!1sen!2sus!4v1699655039015!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="backgroundhighlight map-places crossroads">
+                <div class="grid-piece map-content">
+                    <h4>Crossroads</h4>
+                    <p>15600 NE 8th St K-4 <br>
+                        Bellevue, WA 98008 <br>
+                        (425) 747-0557</p>
+                </div>
             </div>
 
-            <div class="bellevue">
-                <h4>Bellevue</h4>
-                <p>909 112th Ave NE #106 <br>
-                    Bellevue, WA 98004 <br>
-                    (425) 590-9640</p>
+            <div class="backgroundhighlight map-places bellevue">
+                <div class="grid-piece map-content">
+                    <h4>Bellevue</h4>
+                    <p>909 112th Ave NE #106 <br>
+                        Bellevue, WA 98004 <br>
+                        (425) 590-9640</p>
+                </div>
             </div>
 
-            <div class="redmond">
-                <h4>Redmond Town Center</h4>
-                <p>7330 164TH Ave NE <br>
-                    Redmond, WA 98052<br>
-                    (425) 522-4931</p>
+            <div class="backgroundhighlight map-places redmond">
+                <div class="grid-piece map-content">
+                    <h4>Redmond Town Center</h4>
+                    <p>7330 164TH Ave NE <br>
+                        Redmond, WA 98052<br>
+                        (425) 522-4931</p>
+                </div>
             </div>
         </div>
 
-        <div class="grid-container backgroundhighlight bhtwo">
-            <div class="contactform">
-                <p>stand in content for the form</p>
+        <div class="grid-con backgroundhighlight bhtwo">
+            <div class="grid-piece contactform">
+                <div class="backgroundhighlight2 bhform">
+                    <p class="getintouch">Get In Touch</p>
+                    <form>
+                        <input type="text" id="fname" name="myName" value="First Name"><br><br>
+                        <input type="text" id="lname" name="myName" value="Last Name"><br><br>
+                        <input type="text" id="email" name="myName" value="Email"><br><br>
+                        <input type="text" id="phone" name="myName" value="Phone Number"><br><br>
+                        <input type="button" value="Submit Form" onclick="confirm()">
+                    </form>
+                </div>
             </div>
 
             <div class="item-form-image">
-                <img class="form-image" src="images/food image 1.jpg">
+                <img class="form-image" src="images/footer.jpg" alt="picture of food from the bakery">
             </div>
         </div>
-        
+
     </div>
 </body>
+
+<script>
+    function confirm() {
+        let fname = document.getElementById('fname').value;
+        let lname = document.getElementById('lname').value;
+        let email = document.getElementById('email').value;
+        let phone = document.getElementById('phone').value;
+        alert("hello " + fname + " " + lname + ", thank you for submitting the form! We will get in touch with you at " + email + " or " + phone);
+    }
+</script>

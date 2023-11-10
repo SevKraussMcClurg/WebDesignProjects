@@ -1,5 +1,5 @@
 .title {
-    font-size:70px;
+    font-size: 90px;
     margin: 10px;
 }
 
@@ -9,12 +9,48 @@
     padding: 10px;
 }
 
+.header {
+    margin-left: 70px;
+}
+
 .french {
     color: #72909F;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: 120px;
+}
+
+.the {
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 30px;
+    padding-bottom: -50px;
+}
+
+.bakery {
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ione, .ithree {
+    padding-top: 30px;
+}
+
+.intro-text {
+    padding-top: 30px;
 }
 
 .backgroundhighlight {
-    background-color: #BFB3A8;
+    background-color: #BFB6AC;
+}
+
+.backgroundhighlight2 {
+    background-color: #E6DFD9;
 }
 
 body {
@@ -34,6 +70,9 @@ li a {
     text-decoration: none;
     float: right;
     padding: 16px 16px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 ul.nav {
@@ -48,12 +87,14 @@ ul.nav li {
     display: inline;
 }
 
-ul.nav li a:link:hover:not(.orderbutton), a:visited:hover:not(.orderbutton) {
+.navbutton:link:hover,
+.navbutton:visited:hover {
     color: grey;
 }
 
-a:link, a:visited{
-    color:#61584F;
+a:link,
+a:visited {
+    color: #59513A;
 }
 
 .orderbutton {
@@ -62,10 +103,10 @@ a:link, a:visited{
 
 .orderbutton:hover {
     background-color: #72909F;
-    color:#61584F;
+    color: #59513A;
 }
 
-.grid-container {
+.grid-con {
     display: grid;
 }
 
@@ -73,9 +114,12 @@ a:link, a:visited{
     grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
 }
 
-.grid-item {
+.grid-piece {
     align-content: center;
-    color: #61584F;
+    color: #59513A;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .intro-text-text {
@@ -84,11 +128,12 @@ a:link, a:visited{
 
 .bhtwo {
     grid-template-columns: 50% 50%;
+    margin-top: 20px;
 }
 
 .form-image {
     width: 500px;
-    height: 500px;
+    height: 340px;
     float: right;
 }
 
@@ -104,12 +149,90 @@ a:link, a:visited{
 
 .specialties-header {
     font-size: 40px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.specialties-text {
+    margin-top: -45px;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 20px;
 }
 
 .map-header {
     font-size: 40px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .map {
     grid-template-columns: 50% 50%;
+}
+
+.map-places {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.map-content {
+    padding-left: 20px;
+}
+
+.view-menu-button {
+    float: right;
+    padding: 16px 16px;
+    font-size: 20px;
+    display: inline;
+    width: 110px;
+    height: 18px;
+    margin: auto;
+
+}
+
+.view-menu-button a {
+    text-decoration: none;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 16.5px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.google-map {
+    margin-top: 10px;
+}
+
+td img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+.bhform {
+    margin: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 200px;
+}
+
+.fname {
+    font-size: 20px;
+    color: #59513A;
+}
+
+.getintouch {
+    font-size: 30px;
+    color: #59513A;
 }
