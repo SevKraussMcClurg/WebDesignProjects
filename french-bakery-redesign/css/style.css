@@ -174,6 +174,7 @@ a:visited {
     font-weight: 700;
     font-style: normal;
     color: #59513A; 
+    margin-bottom: 6px;
 }
 
 .map {
@@ -312,5 +313,39 @@ table {
 .about-image-two {
     height: 472px;
     width: auto;
+    margin: auto;
+}
+
+.bhfour {
+    padding: 20px;
+    padding-bottom: 25px;
+}
+
+.impact-header {
+    font-size: 40px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #59513A;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.impact-subheader {
+    font-size: 20px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #59513A;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.impact-text {
+    color: #59513A;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 500px;
     margin: auto;
 }
