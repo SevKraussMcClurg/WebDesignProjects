@@ -14,6 +14,230 @@
 </head>
 
 <style>
+    .bread-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .standard {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .seasonal {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .sweet-bread {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .croissant-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sweet-croissants {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .savory {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .desserts-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .dessert-one {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .dessert-two {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .pasteries-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .pasteries-one {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .pasteries-two {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .cakes-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .fresh-strawberry {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .dark-chocolate-mousse {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .black-forest {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .tiramisu {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .coffee-swiss-roll {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .mango-cream {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .raspberry-cream {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .raspberry-cheesecake-tart {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+    .lemon-mousse {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .chocolate-raspberry {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .pear-almond-tart {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    .blueberry-cream {
+        grid-column: 4;
+        grid-row: 4;
+    }
+
+    .white-fruit-mousse {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .mandarin-orange {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .fresh-fruit-tart {
+        grid-column: 3;
+        grid-row: 5;
+    }
+
+    .panini-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hot-grilled {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .fresh-cold {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .crepe-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sweet-crepes {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .savory-crepes {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .egg-croissants-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .egg-croissants-items {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .salads-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .salads-items {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .kids-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .kids-items {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .drinks-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .coffee {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .tea {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .beverages {
+        grid-column: 3;
+        grid-row: 2;
+    }
 </style>
 
 <body>
@@ -26,5 +250,321 @@
             <li><a class="navbutton" href="locations.html">LOCATIONS</a></li>
             <li><a class="navbutton" href="index.html">HOME</a></li>
             <li><img class="logo-image" src="images/logo.jpg"></li>
+        </ul>
+        <ul class="menu-nav">
+            <li><a href="#breads">Breads</a></li>
+            <li><a href="#croissant">Croissants</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#pasteries">Pasteries</a></li>
+            <li><a href="#cakes">Cakes</a></li>
+            <li><a href="#paninis">Paninis</a></li>
+            <li><a href="#crepes">Crepes</a></li>
+            <li><a href="#egg-croissants">Egg Croissants</a></li>
+            <li><a href="#salads">Salads</a></li>
+            <li><a href="#kids">Kids Menu</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+        </ul>
     </div>
+    <hr>
+    <div class="grid-con breads">
+        <a id="breads"><h1 class="menu-header bread-header">Bread</h1></a>
+        <div class="standard">
+            <h2 class="menu-subheader">Standard</h2>
+            <h4 class="menu-text">BAGUETTE</h4>
+            <h4 class="menu-text">PAIN DE CAMPAGNE</h4>
+            <h4 class="menu-text">CHALLAH</h4>
+            <h4 class="menu-text">PAIN DE MIE</h4>
+            <h4 class="menu-text">9 GRAIN</h4>
+            <h4 class="menu-text">BRIOCHE LOAF</h4>
+            <h4 class="menu-text">BRIOCHE BALL</h4>
+            <h4 class="menu-text">WHOLE WHEAT</h4>
+        </div>
+        <div class="seasonal">
+            <h2 class="menu-subheader">Seasonal</h2>
+            <h4 class="menu-text">CROWN CHALLAH</h4>
+            <h4 class="menu-text">HOT CROSS BUNS</h4>
+            <h4 class="menu-text">STOLLEN</h4>
+        </div>
+        <div class="sweet-bread">
+            <h2 class="menu-subheader">Sweet</h2>
+            <h4 class="menu-text">APPLE CINNAMON</h4>
+            <h4 class="menu-text">BANANA WALNUT</h4>
+            <h4 class="menu-text">BLUEBERRY</h4>
+            <h4 class="menu-text">CHOCOLATE MARBLE</h4>
+            <h4 class="menu-text">LEMON POPPY SEED</h4>
+            <h4 class="menu-text">ORANGE CRANBERRY</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con croissants">
+        <a id="croissant"><h1 class="menu-header croissant-header">Croissants</h1></a>
+        <div class="sweet-croissants">
+            <h2 class="menu-subheader">Sweet</h2>
+            <h4 class="menu-text">PAIN AU CHOCOLATE</h4>
+            <h4 class="menu-text">TWICE BAKED ALMOND CROISSANT</h4>
+            <h4 class="menu-text">TWICED BAKED CHOCOLATE ALMOND CROISSANT</h4>
+            <h4 class="menu-text">CINNAMON CROISSANT</h4>
+            <h4 class="menu-text">APPLE CROISSANT</h4>
+            <h4 class="menu-text">FRESH FRUIT CREAM CHEESE CROISSANT</h4>
+            <h4 class="menu-text">MARIONBERRY CREAM CREESE</h4>
+            <h4 class="menu-text">RASPBERRY CROISSANT</h4>
+            <h4 class="menu-text">STRAWBERRY CROISSANT</h4>
+        </div>
+        <div class="savory">
+            <h2 class="menu-subheader">Savory</h2>
+            <h4 class="menu-text">BUTTER CROISSANT</h4>
+            <h4 class="menu-text">GRUYERE CHEESE CROISSANT</h4>
+            <h4 class="menu-text">HAM & PROVOLONE CROISSANT</h4>
+            <h4 class="menu-text">TURKEY & CHEDDAR CROISSANT</h4>
+            <h4 class="menu-text">JALAPENO & CREAM CHEESE</h4>
+            <h4 class="menu-text">BASIL PESTO & TOMATO</h4>
+            <h4 class="menu-text">SPINACH & FETA</h4>
+            <h4 class="menu-text">VEGGIE CROISSANT</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con desserts">
+        <a id="desserts"><h1 class="menu-header dessert-header">Desserts</h1></a>
+        <div class="dessert-one">
+            <h4 class="menu-text">CHOCOLATE RASPBERRY DELICE</h4>
+            <h4 class="menu-text">STRAWBERRY WHITE CHOCOLATE</h4>
+            <h4 class="menu-text">BLUEBERRY CREAM LAYERS</h4>
+            <h4 class="menu-text">FRESH STRAWBERRY ECLAIR</h4>
+        </div>
+        <div class="dessert-two">
+            <h4 class="menu-text">ECLAIR</h4>
+            <h4 class="menu-text">FRESH FRUIT TARTLET</h4>
+            <h4 class="menu-text">PEAR ALMOND TART SLICE</h4>
+            <h4 class="menu-text">MILLE FEUILLE</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con pasteries">
+        <a id="pasteries"><h1 class="menu-header pasteries-header">Pasteries</h1></a>
+        <div class="pasteries-one">
+            <h4 class="menu-text">BEAR CLAW</h4>
+            <h4 class="menu-text">CINNAMON ROLL</h4>
+            <h4 class="menu-text">CREAM CHEESE BRIOCHE</h4>
+            <h4 class="menu-text">DANISH</h4>
+            <h4 class="menu-text">PALMIER</h4>
+            <h4 class="menu-text">STRUDEL</h4>
+            <h4 class="menu-text">RASPBERRY CREAMCHEESE BRIOCHE</h4>
+        </div>
+        <div class="pasteries-two">
+            <h4 class="menu-text">NUTELLA TWIST</h4>
+            <h4 class="menu-text">SOFT CHOCOLATE CHIP COOKIE</h4>
+            <h4 class="menu-text">TURNOVER</h4>
+            <h4 class="menu-text">MADELEINES</h4>
+            <h4 class="menu-text">SOFT OATMEAL RAISIN COOKIE</h4>
+            <h4 class="menu-text">SHORTBREAD COOKIE</h4>
+            <h4 class="menu-text">BISCOTTI</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con cakes">
+        <a id="cakes"><h1 class="menu-header cakes-header">Cakes</h1></a>
+        <div class="fresh-strawberry">
+            <h2 class="menu-subheader">Fresh Strawberry</h2>
+            <h4 class="menu-text">MOIST VANILLA CAKE LAYERED WITH FRESH STRAWBERRIES, HOUSE MADE WHIPPED CREAM &
+                DECORATED WITH
+                SLIVERED
+                ALMONDS.</h4>
+        </div>
+        <div class="cake-title-center dark-chocolate-mousse">
+            <h2 class="menu-subheader">Dark Chocolate Mousse</h2>
+            <h4 class="menu-text">DENSE CHOCOLATE CAKE, DARK CHOCOLATE CREAM TOPPED WITH WHIPPED CREAM & CHOCOLATE
+                PIECES.</h4>
+        </div>
+        <div class="cake-title-center black-forest">
+            <h2 class="menu-subheader">Black Forest</h2>
+            <h4 class="menu-text">DARK CHOCOLATE CAKE LAYERED WITH HOUSE MADE WHIPPED CREAM,CHERRIES & CHERRY JAM.
+                TOPPED WITH WHIPPED
+                CREAM, CHOCOLATE SHAVINGS & MARASCHINO CHERRIES.</h4>
+        </div>
+        <div class="tiramisu">
+            <h2 class="menu-subheader">Tiramisu</h2>
+            <h4 class="menu-text">DARK CHOCOLATE CAKE, LAYERED WITH COFFEE CREAM. DECORATED WITH COCOA NIBS, WHIPPED
+                CREAM AND CANDIED
+                ESPRESSO BEANS.</h4>
+        </div>
+        <div class="coffee-swiss-roll">
+            <h2 class="menu-subheader">Coffee Swiss Roll</h2>
+            <h4 class="menu-text">CHOCOLATE CAKE, COFFEE CREAM, CHOCOLATE SHAVINGS, CANDIED ESPRESSO BEANS & DUSTED
+                WITH POWDERED
+                SUGAR.</h4>
+        </div>
+        <div class="cake-title-center mango-cream">
+            <h2 class="menu-subheader">Mango Cream</h2>
+            <h4 class="menu-text">VANILLA CAKE, LAYERS OF MANGO CREAM. TOPPED WITH DICED MANGO AND HOUSE MADE
+                WHIPPED CREAM.</h4>
+        </div>
+        <div class="cake-title-center raspberry-cream">
+            <h2 class="menu-subheader">Raspberry Cream</h2>
+            <h4 class="menu-text">VANILLA CAKE LAYERED WITH WHIPPED CREAM & RASPBERRY. TOPPED WITH WHITE CHOCOLATE.
+                (SUMMER ONLY)</h4>
+        </div>
+        <div class="raspberry-cheesecake-tart">
+            <h2 class="menu-subheader">Raspberry Cheesecake Tart</h2>
+            <h4 class="menu-text">VANILLA COOKIE CRUST FILLED WITH A LAYER OF SWEET CREAM CHEESE, RASPBERRY JAM &
+                LATTICE CRUST TOP.
+            </h4>
+        </div>
+        <div class="lemon-mousse">
+            <h2 class="menu-subheader">Lemon Mousse</h2>
+            <h4 class="menu-text">MOIST VANILLA CAKE LAYERED WITH LEMON CREAM. TOPPED WITH LEMON FRUIT FILLING &
+                WHIPPED CREAM.</h4>
+        </div>
+        <div class="cake-title-center chocolate-raspberry">
+            <h2 class="menu-subheader">Chocolate Raspberry</h2>
+            <h4 class="menu-text">DARK CHOCOLATE CAKE WITH ALTERNATING LAYERS OF RASPBERRY & VANILLA CREAM. TOPPED
+                WITH RASPBERRY
+                FRUIT FILLING & FRESH RASPBERRY.</h4>
+        </div>
+        <div class="cake-title-center pear-almond-tart">
+            <h2 class="menu-subheader">Pear Almond Tart</h2>
+            <h4 class="menu-text">WHOLE GOLDEN PEARS MIXED WITH CREAMY ALMOND CUSTARD ON A VANILLA COOKIE CRUST.
+            </h4>
+        </div>
+        <div class="blueberry-cream">
+            <h2 class="menu-subheader">Blueberry Cream</h2>
+            <h4 class="menu-text">MOIST BLUEBERRY CAKE LAYERED WITH BLUEBERRY CREAM & TOPPED WITH SWEET AND BITES OF
+                BLUEBERRY FRUIT
+                FILLING.</h4>
+        </div>
+        <div class="white-fruit-mousse">
+            <h2 class="menu-subheader">White Fruit Mousse</h2>
+            <h4 class="menu-text">VANILLA CAKE WITH LAYERS OF HOUSE MADE WHIPPED CREAM & MIXED FRUIT.</h4>
+        </div>
+        <div class="cake-title-center mandarin-orange">
+            <h2 class="menu-subheader">Mandarin Orange</h2>
+            <h4 class="menu-text">VANILLA CAKE WITH LAYERS OF MANDARIN ORANGE CREAM TOPPED WITH HOUSE MADE WHIPPED
+                CREAM & MANDARIN
+                ORANGES</h4>
+        </div>
+        <div class="cake-title-center fresh-fruit-tart">
+            <h2 class="menu-subheader">Fresh Fruit Tart</h2>
+            <h4 class="menu-text">FRESH STRAWBERRY, KIWI, MANDARIN ORANGE & BLUEBERRY ON VANILLA COOKIE CRUST FILLED
+                WITH HOUSE MADE
+                VANILLA CREAM & AN APRICOT GLAZE.</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con paninis">
+        <a id="paninis"><h1 class="menu-header panini-header">Paninis</h1></a>
+        <div class="hot-grilled">
+            <h2 class="menu-subheader">Hot Grilled</h2>
+            <h4 class="menu-text">GRILLED CHEESE</h4>
+            <h4 class="menu-text">VEGGIES & HAVARTI</h4>
+            <h4 class="menu-text">ROASTED TURKEY & HAVARTI</h4>
+            <h4 class="menu-text">PARMA PROSCIUTTO & FIG</h4>
+            <h4 class="menu-text">TURKEY & BACON CLUB</h4>
+            <h4 class="menu-text">CROQUE MADAME</h4>
+            <h4 class="menu-text">CROQUE MONSIEUR</h4>
+            <h4 class="menu-text">BRIE & SUN-DRIED TOMATO</h4>
+        </div>
+        <div class="fresh-cold">
+            <h2 class="menu-subheader">Fresh Cold</h2>
+            <h4 class="menu-text">FRESH MOZZARELLA</h4>
+            <h4 class="menu-text">ALBACORE TUNA SALAD</h4>
+            <h4 class="menu-text">HAM & SWISS</h4>
+            <h4 class="menu-text">ROASTED TURKEY CRANBERRIES</h4>
+            <h4 class="menu-text">PARMA PROSCIUTTO & SWISS</h4>
+            <h4 class="menu-text">ROASTED TURKEY & SWISS</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con crepes">
+        <a id="crepes"><h1 class="menu-header crepe-header">Crepes</h1></a>
+        <div class="sweet-crepes">
+            <h2 class="menu-subheader">Sweet</h2>
+            <h4 class="menu-text">CARAMEL CINNAMON BANANA</h4>
+            <h4 class="menu-text">FRESH STRAWBERRY NUTELLA</h4>
+            <h4 class="menu-text">FRESH STRAWBERRY WHITE CHOCOLATE</h4>
+            <h4 class="menu-text">LEMON & SUGAR</h4>
+            <h4 class="menu-text">NUTELLA OR STRAWBERRY JAM</h4>
+            <h4 class="menu-text">NUTELLA BANANA</h4>
+        </div>
+        <div class="savory-crepes">
+            <h2 class="menu-subheader">Savory</h2>
+            <h4 class="menu-text">CHEESE CREPE</h4>
+            <h4 class="menu-text">GOAT CHEESE & SPINACH CREPE</h4>
+            <h4 class="menu-text">HAM TOMATO SPINACH CREPE</h4>
+            <h4 class="menu-text">ROASTED TURKEY & CRANBERRIES CREPE</h4>
+            <h4 class="menu-text">ROASTED TURKEY & PESTO TOMATO CREPE</h4>
+            <h4 class="menu-text">SAVORY VEGGIES CREPE</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con egg-croissants">
+        <a id="egg-croissants"><h1 class="menu-header egg-croissants-header">Egg Croissants</h1></a>
+        <div class="egg-croissants-items">
+            <h4 class="menu-text">EGG CHEDDAR</h4>
+            <h4 class="menu-text">EGG BACON CHEDDAR</h4>
+            <h4 class="menu-text">EGG HAM CHEDDAR</h4>
+            <h4 class="menu-text">EGG TURKEY CHEDDAR</h4>
+            <h4 class="menu-text">ROASTED TURKEY TOMATO PESTO</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con salads">
+        <a id="salads"><h1 class="menu-header salads-header">Salads</h1></a>
+        <div class="salads-items">
+            <h4 class="menu-text">CHEF SALAD</h4>
+            <h4 class="menu-text">PROVENCALE</h4>
+            <h4 class="menu-text">NICOISE</h4>
+            <h4 class="menu-text">SIDE SALAD</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con kids">
+        <a id="kids"><h1 class="menu-header kids-header">Kids Menu</h1></a>
+        <div class="kids-items">
+            <h4 class="menu-text">GRILLED TURKEY & CHEDDAR</h4>
+            <h4 class="menu-text">GRILLED HAM & CHEDDAR</h4>
+            <h4 class="menu-text">HAM & SWISS BAGUETTE</h4>
+            <h4 class="menu-text">FRESH APPLE OR BANANA</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="grid-con drinks">
+        <a id="drinks"><h1 class="menu-header drinks-header">Drinks</h1></a>
+        <div class="coffee">
+            <h2 class="menu-subheader">Coffee</h2>
+            <h4 class="menu-text">AUTHENTIC ITALIAN COFFEE (ATTIBASSI)</h4>
+            <h4 class="menu-text">ESPRESSO</h4>
+            <h4 class="menu-text">AMERICANO</h4>
+            <h4 class="menu-text">MACCHIATO</h4>
+            <h4 class="menu-text">LATTE</h4>
+            <h4 class="menu-text">CAPPUCCINO</h4>
+            <h4 class="menu-text">CAPPUCCINO VIENNESE</h4>
+            <h4 class="menu-text">CAFFE MOCHA</h4>
+            <h4 class="menu-text">CAFFE AU LAIT</h4>
+            <h4 class="menu-text">VIETNAMESE ICE COFFEE</h4>
+            <h4 class="menu-text">COLD BREW</h4>
+        </div>
+        <div class="tea">
+            <h2 class="menu-subheader">Tea</h2>
+            <h4 class="menu-text">HOT TEA</h4>
+            <h4 class="menu-text">ICED TEA</h4>
+            <h4 class="menu-text">CHAI TEA LATTE</h4>
+            <h4 class="menu-text">CHAI ICED TEA</h4>
+            <h4 class="menu-text">LONDON FOG</h4>
+            <h4 class="menu-text">TROPICAL ICED TEA</h4>
+        </div>
+        <div class="beverages">
+            <h2 class="menu-subheader">Beverages</h2>
+            <h4 class="menu-text">PERRIER</h4>
+            <h4 class="menu-text">SAN PELLIGRINO</h4>
+            <h4 class="menu-text">BOTTLED WATER</h4>
+            <h4 class="menu-text">MARTINELLI APPLE JUICE</h4>
+            <h4 class="menu-text">MARTINELLI SPARKLING APPLE JUICE</h4>
+            <h4 class="menu-text">FRENCH SODA</h4>
+            <h4 class="menu-text">ORANGE JUICE</h4>
+            <h4 class="menu-text">MILK</h4>
+            <h4 class="menu-text">CHOCOLATE MILK</h4>
+            <h4 class="menu-text">STEAMED MILK</h4>
+            <h4 class="menu-text">HOT CHOCOLATE</h4>
+        </div>
+    </div>
+    <hr>
 </body>

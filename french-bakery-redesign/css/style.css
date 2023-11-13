@@ -37,7 +37,8 @@
     font-style: normal;
 }
 
-.ione, .ithree {
+.ione,
+.ithree {
     padding-top: 30px;
 }
 
@@ -57,7 +58,8 @@ body {
     background-color: #E6DFD9;
 }
 
-.nav {
+.nav,
+.menu-nav {
     list-style-type: none;
     margin: 10;
     padding: 0;
@@ -72,13 +74,39 @@ body {
     height: 50px;
 }
 
-li a {
+.nav li a {
     text-decoration: none;
     float: right;
     padding: 16px 16px;
     font-family: "the-seasons", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.menu-nav li a {
+text-decoration: none;
+padding: 16px 16px;
+font-family: "the-seasons",
+sans-serif;
+font-weight: 700;
+font-style: normal;
+display: block;
+}
+
+ul.menu-nav li {
+align-content: center;
+text-decoration: none;
+font-size: 20px;
+display: inline;
+float: left;
+}
+
+.menu-nav {
+padding: 14px;
+align-content: center;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
 }
 
 ul.nav {
@@ -173,7 +201,7 @@ a:visited {
     font-family: "the-seasons", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #59513A; 
+    color: #59513A;
     margin-bottom: 6px;
 }
 
@@ -348,4 +376,107 @@ table {
     font-style: normal;
     width: 500px;
     margin: auto;
+}
+
+.menu-overall {
+    grid-template-columns: auto;
+}
+
+.menu-header {
+    font-size: 50px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #59513A;
+}
+
+.menu-subheader {
+    font-size: 30px;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #59513A;
+}
+
+.menu-text {
+    color: #59513A;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.breads {
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.croissants {
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.desserts {
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pasteries {
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cakes {
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cake-title-center {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.paninis {
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.crepes {
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.egg-croissants {
+    grid-template-columns: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.salads {
+    grid-template-columns: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kids {
+    grid-template-columns: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.drinks {
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
 }
